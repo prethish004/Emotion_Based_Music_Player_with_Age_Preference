@@ -95,8 +95,8 @@ def fetch_trending_songs(emotion, age, languages):
     return songs[:6]
 
 # Initialize state variables
-if "process_completed" not in st.session_state:
-    st.session_state["process_completed"] = False
+if "process_completed" in st.session_state:
+    st.session_state["process_completed"]
 
 st.header("Emotion-Based Music Player with Age Preference")
 spell = SpellChecker()
