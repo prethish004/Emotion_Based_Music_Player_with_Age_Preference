@@ -45,7 +45,7 @@ emotion-based-music-recommendation/
 ```
 
 ## Usage
-1. Run the `input_handler.py` script to input your details:
+1. Run the `app.py` script to input your details:
    ```
     python -m streamlit run app.py
 
