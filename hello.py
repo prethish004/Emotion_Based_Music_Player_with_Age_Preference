@@ -3,19 +3,19 @@ from googleapiclient.discovery import build
 
 # Emotion-to-Music Mapping
 emotion_music_mapping = {
-    "angry": ["rock", "metal", "energetic"],
-    "disgust": ["calm", "relaxing", "ambient"],
-    "fear": ["uplifting", "motivational", "soft"],
-    "happiness": ["pop", "dance", "party"],
-    "neutrality": ["acoustic", "lofi", "chill"],
-    "sadness": ["sad", "melancholic", "slow"],
-    "surprise": ["exciting", "upbeat", "electronic"]
+    "angry": ["rock", "metal", "energetic", "animated movie"],
+    "disgust": ["calm", "relaxing", "ambient", "animated movie"],
+    "fear": ["uplifting", "motivational", "soft", "animated movie"],
+    "happiness": ["pop", "dance", "party", "animated movie"],
+    "neutrality": ["acoustic", "lofi", "chill", "animated movie"],
+    "sadness": ["sad", "melancholic", "slow", "animated movie"],
+    "surprise": ["exciting", "upbeat", "electronic", "animated movie"]
 }
 
 def fetch_trending_songs(emotion, age, languages, api_key):
     youtube = build('youtube', 'v3', developerKey=api_key)
 
-    genres = emotion_music_mapping.get(emotion, ["popular"])
+    genres = emotion_music_mapping.get(emotion, ["Trending"])
     songs = []
     
     for lang in languages:
