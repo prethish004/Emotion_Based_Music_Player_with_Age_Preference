@@ -37,8 +37,8 @@ This project is an **Emotion-Based Music Recommendation System** that uses user 
 ## Project Structure
 ```
 emotion-based-music-recommendation/
-├── input_handler.py      # Handles user input for emotion, age, and languages
-├── fetch_songs.py        # Fetches songs based on the input and YouTube API
+├── app.py      # Handles user input for emotion, age, and languages
+├── hello.py        # Fetches songs based on the input and YouTube API
 ├── README.md             # Project documentation
 ├── requirements.txt      # Required Python libraries
 └── example_output/       # Example outputs (optional)
@@ -47,8 +47,8 @@ emotion-based-music-recommendation/
 ## Usage
 1. Run the `input_handler.py` script to input your details:
    ```bash
-   python input_handler.py
-   ```
+ python -m streamlit run app.py
+ ```
 2. The script will call `fetch_songs.py` to recommend songs based on your input.
 3. Results will include up to **6 top songs**, with at least one being an animated movie song.
 
