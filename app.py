@@ -9,7 +9,7 @@ import yt_dlp
 import isodate  # For parsing ISO 8601 duration from YouTube API
 
 # Load the emotion detection model
-model = tf.keras.models.load_model("emotion_model.h5")
+model = tf.keras.models.load_model("./emotion_model.h5")
 
 # Preprocess the image for the emotion model
 def preprocess_image(image):
