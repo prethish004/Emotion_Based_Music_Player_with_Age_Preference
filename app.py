@@ -102,7 +102,7 @@ st.header("Emotion-Based Music Player with Age Preference")
 spell = SpellChecker()
 
 # Step 1: Age Input
-age = st.number_input("Enter your age:", min_value=1, max_value=100, step=1)
+age = st.number_input("Enter your age:", min_value=1, max_value=100, step=1,value=25)
 
 # Input for languages with spell-checking
 languages_input = st.text_input("Enter languages (comma-separated):", value="English")
