@@ -211,12 +211,9 @@ def get_audio_url(video_id):
     
     return audio_url
 
-# # Initialize state variables
-# if "process_completed" not in st.session_state:
-#     st.session_state["process_completed"] = False
-if st.button("Retake/Re-upload Image"):
-    st.session_state["process_completed"] = False  # Reset the process
-    st.session_state["emotion_detected"] = None  # Reset emotion detection
+# Initialize state variables
+if "process_completed" not in st.session_state:
+    st.session_state["process_completed"] = False
 
 st.header("Emotion-Based Music Player with Age Preference")
 spell = SpellChecker()
@@ -283,5 +280,6 @@ if st.session_state.get("emotion_detected"):
             st.audio(audio_url, format="audio/mp4")
         else:
             st.warning("Audio not available or duration is less than 2 minutes.")
-if st.button("Show other songs"):
-        st.experimental_rerun()
+if st.button("Retake/Re-upload Image"):
+    st.session_state["process_completed"] = False  # Reset the process
+    st.session_state["emotion_detected"] = None  # Reset emotion detection
