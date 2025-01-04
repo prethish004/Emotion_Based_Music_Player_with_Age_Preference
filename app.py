@@ -57,7 +57,7 @@ def get_audio_url(video_id):
 
 # Fetch trending songs dynamically using YouTube API
 def fetch_trending_songs(emotion, age, languages):
-    api_key = "AIzaSyAYmxZ0Wg5ZsTTUJ3cijr_IrzjnJSQcy8U"  # Replace with your actual API key
+    api_key = 'AIzaSyD4-X0747wo4mXqJrxHwWb7mo1Yq3JhUhE'  # Replace with your actual API key
     youtube = build('youtube', 'v3', developerKey=api_key)
 
     genres = emotion_music_mapping.get(emotion, ["popular"])
@@ -95,8 +95,8 @@ def fetch_trending_songs(emotion, age, languages):
     return songs[:6]
 
 # Initialize state variables
-if "process_completed" in st.session_state:
-    st.session_state["process_completed"]
+if "process_completed" not in st.session_state:
+    st.session_state["process_completed"] = False
 
 st.header("Emotion-Based Music Player with Age Preference")
 spell = SpellChecker()
