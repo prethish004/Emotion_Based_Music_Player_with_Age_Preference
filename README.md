@@ -3,7 +3,7 @@
 
 ## Overview
 This project is an **Emotion-Based Music Recommendation System** that uses user emotions, age, and preferred languages to recommend trending songs. The system ensures at least one animated movie song is included in the recommendations for enhanced diversity and user experience.
-
+Hosted link="https://emotionbasedmusicplayerfromyoutube.streamlit.app/"
 ## Features
 - 🎭 **Emotion-Based Recommendations**: Suggests songs based on user emotions like happiness, sadness, or excitement.
 - 🎞️ **Animated Movie Songs**: Guarantees inclusion of at least one animated movie song in recommendations.
