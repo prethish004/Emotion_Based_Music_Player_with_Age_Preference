@@ -280,6 +280,4 @@ if st.session_state.get("emotion_detected"):
             st.audio(audio_url, format="audio/mp4")
         else:
             st.warning("Audio not available or duration is less than 2 minutes.")
-if st.button("Retake/Re-upload Image"):
-    st.session_state["process_completed"] = False  # Reset the process
-    st.session_state["emotion_detected"] = None  # Reset emotion detection
+
