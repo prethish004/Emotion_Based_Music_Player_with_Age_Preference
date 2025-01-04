@@ -46,11 +46,12 @@ emotion-based-music-recommendation/
 
 ## Usage
 1. Run the `input_handler.py` script to input your details:
-   ```bash
- python -m streamlit run app.py
- ```
-2. The script will call `fetch_songs.py` to recommend songs based on your input.
-3. Results will include up to **6 top songs**, with at least one being an animated movie song.
+   ```
+    python -m streamlit run app.py
+
+    ```
+3. The script will call `fetch_songs.py` to recommend songs based on your input.
+4. Results will include up to **6 top songs**, with at least one being an animated movie song.
 
 ## Example
 ### Input:
