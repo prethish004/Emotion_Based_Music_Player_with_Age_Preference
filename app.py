@@ -215,7 +215,7 @@ def get_audio_url(video_id):
 if "process_completed" not in st.session_state:
     st.session_state["process_completed"] = False
 
-st.header("Emotion-Based Music Player with Age Preference")
+st.header("Emotion-Based Music Player with Age Preference🎶🎶")
 spell = SpellChecker()
 
 # Step 1: Age Input
@@ -243,7 +243,7 @@ if uploaded_image and corrected_languages:
         # Preprocess and predict the emotion from the image
         img_arr = preprocess_image(image)
         prediction = model.predict(img_arr)
-        emotions = ["angry", "contempt", "disgust", "fear", "happiness", "neutrality", "sadness", "surprise"]
+        emotions = ["angry😠", "contempt", "disgust", "fear", "happiness", "neutrality", "sadness", "surprise"]
         detected_emotion = emotions[np.argmax(prediction)]
 
         st.success(f"Detected Emotion: {detected_emotion}")
