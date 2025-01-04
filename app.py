@@ -211,9 +211,12 @@ def get_audio_url(video_id):
     
     return audio_url
 
-# Initialize state variables
-if "process_completed" not in st.session_state:
-    st.session_state["process_completed"] = False
+# # Initialize state variables
+# if "process_completed" not in st.session_state:
+#     st.session_state["process_completed"] = False
+if st.button("Retake/Re-upload Image"):
+    st.session_state["process_completed"] = False  # Reset the process
+    st.session_state["emotion_detected"] = None  # Reset emotion detection
 
 st.header("Emotion-Based Music Player with Age Preference")
 spell = SpellChecker()
